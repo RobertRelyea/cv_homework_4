@@ -34,4 +34,6 @@ for (R, K) in zip(R_vals, K_vals):
     plt.ylim(0,50)
     plt.grid()
     plt.show()
-
+    ans = input("Good fig?")
+    if ans == 'y' or ans == 'Y':
+        plt.savefig('R{}K{}.png'.format(R, K))
